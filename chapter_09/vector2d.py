@@ -2,6 +2,8 @@ from array import array
 import math
 
 class Vector2d:
+    # this optimization makes sense only if you have millions of instances,
+    # MILLIONS not thousands
     __slots__ = ('__x', '__y')
 
     typecode = 'd'
